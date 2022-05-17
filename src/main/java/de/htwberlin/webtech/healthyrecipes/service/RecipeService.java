@@ -1,9 +1,9 @@
-package de.htwberlin.webtech.service;
+package de.htwberlin.webtech.healthyrecipes.service;
 
 import de.htwberlin.webtech.healthyrecipes.web.api.Recipe;
 import de.htwberlin.webtech.healthyrecipes.web.api.RecipeManipulationRequest;
-import de.htwberlin.webtech.persistence.RecipeEntity;
-import de.htwberlin.webtech.persistence.RecipeRepository;
+import de.htwberlin.webtech.healthyrecipes.persistence.RecipeEntity;
+import de.htwberlin.webtech.healthyrecipes.persistence.RecipeRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package de.htwberlin.webtech.persistence;
+package de.htwberlin.webtech.healthyrecipes.persistence;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

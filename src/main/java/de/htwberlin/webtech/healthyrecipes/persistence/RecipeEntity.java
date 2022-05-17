@@ -1,4 +1,4 @@
-package de.htwberlin.webtech.persistence;
+package de.htwberlin.webtech.healthyrecipes.persistence;
 
 import javax.persistence.*;
 

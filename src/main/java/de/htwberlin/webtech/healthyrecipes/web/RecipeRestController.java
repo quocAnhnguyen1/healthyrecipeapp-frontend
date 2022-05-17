@@ -2,8 +2,7 @@ package de.htwberlin.webtech.healthyrecipes.web;
 
 import de.htwberlin.webtech.healthyrecipes.web.api.Recipe;
 import de.htwberlin.webtech.healthyrecipes.web.api.RecipeManipulationRequest;
-import de.htwberlin.webtech.service.RecipeService;
-import org.apache.coyote.Response;
+import de.htwberlin.webtech.healthyrecipes.service.RecipeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
