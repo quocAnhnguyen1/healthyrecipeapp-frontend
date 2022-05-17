@@ -1,14 +1,14 @@
 package de.htwberlin.webtech.healthyrecipes.web.api;
 
 public class Recipe {
-    private Long recipeID;
+    private long recipeID;
     private String recipeName;
     private String recipeDescription;
-    private Long time;
+    private long time;
     private String difficulty;
     private int likes;
 
-    public Recipe(Long recipeID, String recipeName, String recipeDescription, Long time, String difficulty, int likes){
+    public Recipe(long recipeID, String recipeName, String recipeDescription, long time, String difficulty, int likes){
         this.recipeID = recipeID;
         this.recipeName = recipeName;
         this.recipeDescription = recipeDescription;
@@ -17,11 +17,11 @@ public class Recipe {
         this.likes = likes;
     }
 
-    public Long getRecipeID() {
+    public long getRecipeID() {
         return recipeID;
     }
 
-    public void setRecipeID(Long recipeID) {
+    public void setRecipeID(long recipeID) {
         this.recipeID = recipeID;
     }
 
@@ -41,11 +41,11 @@ public class Recipe {
         this.recipeDescription = recipeDescription;
     }
 
-    public Long getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(Long time) {
+    public void setTime(long time) {
         this.time = time;
     }
 

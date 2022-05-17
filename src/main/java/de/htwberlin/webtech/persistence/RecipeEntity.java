@@ -7,7 +7,7 @@ public class RecipeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "recipeID", nullable = false)
-    private Long recipeID;
+    private long recipeID;
 
     @Column(name = "recipeName", nullable = false)
     private String recipeName;
@@ -24,8 +24,7 @@ public class RecipeEntity {
     @Column(name = "likes", nullable = false)
     private int likes;
 
-    public RecipeEntity(Long recipeID, String recipeName, String recipeDescription, long time, String difficulty, int likes) {
-        this.recipeID = recipeID;
+    public RecipeEntity(String recipeName, String recipeDescription, long time, String difficulty, int likes) {
         this.recipeName = recipeName;
         this.recipeDescription = recipeDescription;
         this.time = time;
@@ -36,7 +35,7 @@ public class RecipeEntity {
     protected RecipeEntity() {
     }
 
-    public Long getRecipeID() {
+    public long getRecipeID() {
         return recipeID;
     }
 
