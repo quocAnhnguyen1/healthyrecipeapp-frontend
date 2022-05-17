@@ -1,14 +1,30 @@
-package de.htwberlin.webtech.healthyrecipes.web.api;
+package de.htwberlin.webtech.persistence;
 
-public class Recipe {
+import javax.persistence.*;
+
+@Entity(name = "recipes")
+public class RecipeEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "recipeID", nullable = false)
     private Long recipeID;
+
+    @Column(name = "recipeName", nullable = false)
     private String recipeName;
+
+    @Column(name = "recipeDescription", nullable = false)
     private String recipeDescription;
-    private Long time;
+
+    @Column(name = "time", nullable = false)
+    private long time;
+
+    @Column(name = "difficulty", nullable = false)
     private String difficulty;
+
+    @Column(name = "likes", nullable = false)
     private int likes;
 
-    public Recipe(Long recipeID, String recipeName, String recipeDescription, Long time, String difficulty, int likes){
+    public RecipeEntity(Long recipeID, String recipeName, String recipeDescription, long time, String difficulty, int likes) {
         this.recipeID = recipeID;
         this.recipeName = recipeName;
         this.recipeDescription = recipeDescription;
@@ -17,12 +33,11 @@ public class Recipe {
         this.likes = likes;
     }
 
-    public Long getRecipeID() {
-        return recipeID;
+    protected RecipeEntity() {
     }
 
-    public void setRecipeID(Long recipeID) {
-        this.recipeID = recipeID;
+    public Long getRecipeID() {
+        return recipeID;
     }
 
     public String getRecipeName() {
@@ -41,11 +56,11 @@ public class Recipe {
         this.recipeDescription = recipeDescription;
     }
 
-    public Long getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(Long time) {
+    public void setTime(long time) {
         this.time = time;
     }
 
