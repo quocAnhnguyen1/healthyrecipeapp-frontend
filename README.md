@@ -1,4 +1,4 @@
-[![CI](https://github.com/quocAnhnguyen1/healthyrecipeapp-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/quocAnhnguyen1/healthyrecipeapp-frontend/actions/workflows/ci.yml)gi
+[![CI](https://github.com/quocAnhnguyen1/healthyrecipeapp-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/quocAnhnguyen1/healthyrecipeapp-frontend/actions/workflows/ci.yml)
 # healthyrecipes-frontend
 
 ## Project setup
