@@ -8,5 +8,6 @@ You are able to publish your own recipes and to also favor the ones you like fro
 The user has the option to sort the recipes based on "Popularity/Likes", "Difficulty" and "Time".
 Through cookies the website is able to give users an ID, so a user login is not necessary.
 Each recipe will get a recipeID.
+Clicking on the save button will push the recipe into the database and save it.
 
 The top 10 most upvoted/liked recipes will be shown on the default page.

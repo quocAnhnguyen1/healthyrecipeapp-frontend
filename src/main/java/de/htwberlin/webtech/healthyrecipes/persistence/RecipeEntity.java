@@ -32,8 +32,7 @@ public class RecipeEntity {
         this.likes = likes;
     }
 
-    protected RecipeEntity() {
-    }
+    protected RecipeEntity() {}
 
     public long getRecipeID() {
         return recipeID;

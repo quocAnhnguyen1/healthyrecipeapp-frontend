@@ -15,6 +15,8 @@ public class RecipeManipulationRequest {
         this.likes = likes;
     }
 
+    public RecipeManipulationRequest(){}
+
     public String getRecipeName() {
         return recipeName;
     }

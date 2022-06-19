@@ -44,7 +44,7 @@ public class RecipeRestController {
         return recipe != null? ResponseEntity.ok(recipe) : ResponseEntity.notFound().build();
     }
 
-    @DeleteMapping(path="/api/v1/recipes/{}recipeID")
+    @DeleteMapping(path="/api/v1/recipes/{recipeID}")
     public ResponseEntity<Void> deleteRecipe(@PathVariable Long recipeID){
         boolean successful = recipeService.deleteById(recipeID);
         return successful? ResponseEntity.ok().build() : ResponseEntity.notFound().build();
