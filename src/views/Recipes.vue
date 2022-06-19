@@ -13,25 +13,22 @@ export default {
   name: 'Recipes',
   data () {
     return {
-      recipes: [
-        {
-          recipeID: 1,
-          recipeName: 'Chickenburger with avocado sauce',
-          recipeDescription: 'Simple and healthy Chickenburger',
-          time: 30,
-          difficulty: 'easy',
-          likes: 2
-        },
-        {
-          recipeID: 2,
-          recipeName: 'Porridge with fruits',
-          recipeDescription: 'Simple and healthy porridge',
-          time: 15,
-          difficulty: 'easy',
-          likes: 1
-        }
-      ]
+      recipes: []
     }
+  },
+  mounted () {
+    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/recipes'
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    }
+
+    fetch(endpoint, requestOptions)
+      .then(response => response.json())
+      .then(result => result.forEach(recipe => {
+        this.recipes.push(recipe)
+      }))
+      .catch(error => console.log('error', error))
   }
 }
 </script>
