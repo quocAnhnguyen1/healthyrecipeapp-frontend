@@ -21,18 +21,15 @@ public class RecipeEntity {
     @Column(name = "difficulty", nullable = false)
     private String difficulty;
 
-    @Column(name = "likes", nullable = false)
-    private int likes;
-
-    public RecipeEntity(String recipeName, String recipeDescription, long time, String difficulty, int likes) {
+    public RecipeEntity(String recipeName, String recipeDescription, long time, String difficulty) {
         this.recipeName = recipeName;
         this.recipeDescription = recipeDescription;
         this.time = time;
         this.difficulty = difficulty;
-        this.likes = likes;
     }
 
-    protected RecipeEntity() {}
+    protected RecipeEntity() {
+    }
 
     public long getRecipeID() {
         return recipeID;
@@ -70,11 +67,4 @@ public class RecipeEntity {
         this.difficulty = difficulty;
     }
 
-    public int getLikes() {
-        return likes;
-    }
-
-    public void setLikes(int likes) {
-        this.likes = likes;
-    }
 }

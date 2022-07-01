@@ -1,18 +1,22 @@
 package de.htwberlin.webtech.healthyrecipes.web.api;
 
-public class RecipeManipulationRequest {
-    private String recipeName;
-    private String recipeDescription;
-    private long time;
-    private String difficulty;
-    private int likes;
 
-    public RecipeManipulationRequest(String recipeName, String recipeDescription, long time, String difficulty, int likes) {
+
+public class RecipeManipulationRequest {
+
+    private String recipeName;
+
+    private String recipeDescription;
+
+    private long time;
+
+    private String difficulty;
+
+    public RecipeManipulationRequest(String recipeName, String recipeDescription, long time, String difficulty) {
         this.recipeName = recipeName;
         this.recipeDescription = recipeDescription;
         this.time = time;
         this.difficulty = difficulty;
-        this.likes = likes;
     }
 
     public RecipeManipulationRequest(){}
@@ -49,11 +53,4 @@ public class RecipeManipulationRequest {
         this.difficulty = difficulty;
     }
 
-    public int getLikes() {
-        return likes;
-    }
-
-    public void setLikes(int likes) {
-        this.likes = likes;
-    }
 }

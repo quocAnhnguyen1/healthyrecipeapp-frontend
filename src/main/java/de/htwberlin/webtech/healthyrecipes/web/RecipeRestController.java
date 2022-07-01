@@ -34,7 +34,7 @@ public class RecipeRestController {
     @PostMapping(path = "/api/v1/recipes")
     public ResponseEntity<Void> createRecipe(@RequestBody RecipeManipulationRequest request) throws URISyntaxException {
         var recipe = recipeService.create(request);
-        URI uri = new URI("/api/v1/recipes/" + recipe.getRecipeID());
+        URI uri = new URI("/api/v1/recipes" + recipe.getRecipeID());
         return ResponseEntity.created(uri).build();
     }
 

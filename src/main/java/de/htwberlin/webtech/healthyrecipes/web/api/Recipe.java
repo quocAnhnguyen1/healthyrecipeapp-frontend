@@ -6,15 +6,13 @@ public class Recipe {
     private String recipeDescription;
     private long time;
     private String difficulty;
-    private int likes;
 
-    public Recipe(long recipeID, String recipeName, String recipeDescription, long time, String difficulty, int likes){
+    public Recipe(long recipeID, String recipeName, String recipeDescription, long time, String difficulty){
         this.recipeID = recipeID;
         this.recipeName = recipeName;
         this.recipeDescription = recipeDescription;
         this.time = time;
         this.difficulty = difficulty;
-        this.likes = likes;
     }
 
     public long getRecipeID() {
@@ -55,13 +53,5 @@ public class Recipe {
 
     public void setDifficulty(String difficulty) {
         this.difficulty = difficulty;
-    }
-
-    public int getLikes() {
-        return likes;
-    }
-
-    public void setLikes(int likes) {
-        this.likes = likes;
     }
 }
