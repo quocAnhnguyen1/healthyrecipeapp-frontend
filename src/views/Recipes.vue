@@ -1,16 +1,22 @@
 <template>
   <h1>Welcome to recipes</h1>
-  <div class="d-grid gap-2 col-6 mx-auto">
-    <div class="col" v-for="recipe in recipes" :key="recipe.recipeID">
-      <button class="btn btn-primary" type="button">{{ recipe.recipeName }}</button>
-    </div>
+  <div class="container-fluid">
+    <recipes-list :recipes="this.recipes"></recipes-list>
   </div>
+  <recipes-create-form></recipes-create-form>
 </template>
 
 <script>
+import RecipesList from '@/components/RecipesList'
+import RecipesCreateForm from '@/components/RecipesCreateForm'
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Recipes',
+  components: {
+    RecipesCreateForm,
+    RecipesList
+  },
   data () {
     return {
       recipes: []
