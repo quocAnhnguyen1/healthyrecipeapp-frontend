@@ -2,12 +2,12 @@
 
 # healthyrecipeapp
 
-It's a website to create and add healthy recipes.
+It's a website to create, add and share healthy recipes.
 
-You are able to publish your own recipes and to also favor the ones you like from others.
-The user has the option to sort the recipes based on "Popularity/Likes", "Difficulty" and "Time".
-Through cookies the website is able to give users an ID, so a user login is not necessary.
-Each recipe will get a recipeID.
-Clicking on the save button will push the recipe into the database and save it.
+You are able to publish your own recipes and view ones published by others.
+Each recipe will get a unique recipeID.
+Clicking on the create button will push the recipe into the database and save it.
+If you want to create a recipe you have to give it a name, a description, estimated preparation+cooking time
+and a difficulty rating of "easy", "medium", "hard" or "professional".
+The order of recipes is by ID, so the ones that were published earlier will be shown first.
 
-The top 10 most upvoted/liked recipes will be shown on the default page.
