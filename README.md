@@ -11,3 +11,5 @@ If you want to create a recipe you have to give it a name, a description, estima
 and a difficulty rating of "easy", "medium", "hard" or "professional".
 The order of recipes is by ID, so the ones that were published earlier will be shown first.
 
+v1
+
