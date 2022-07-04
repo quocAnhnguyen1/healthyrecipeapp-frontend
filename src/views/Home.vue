@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Hello World!"/>
+    <div class="text-center">
+      <img alt="Recipe logo" src="../assets/healthyFoodHeart.png" class="rounded">
+    </div>
+    <HelloWorld msg="Hello and welcome to healthy recipes!"/>
   </div>
 </template>
 

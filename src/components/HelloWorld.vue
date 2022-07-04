@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <button type="button" class="btn btn-primary">Primary</button>
+    <p class="text-center mt-5">Let's eat healthier together!</p>
   </div>
 </template>
 
